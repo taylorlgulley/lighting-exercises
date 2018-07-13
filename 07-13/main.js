@@ -95,3 +95,27 @@ const politician = {
 }
 
 console.log(politician.platform.money);
+
+// 1. Create a function that logs the result of adding two numbers that were passed in as arguments.
+// 2. Create another function that logs the result of subtracting two numbers that were passed in as arguments.
+// 3. Invoke each function a couple times with different argument values.
+
+function add (x,y) {
+    let sum = x + y;
+    console.log(sum); // Or console.log(x + y) and with this no need for let sum...
+}
+
+add(12,3);
+
+function sub (x,y) {
+    let sum = x - y;
+    console.log(sum);
+}
+
+sub(25,7);
+
+function calculate (a,b,operator){
+    operator(a,b)
+}
+
+calculate(1,3,add)  // Passing the add function back to the operator as the function to invoke
