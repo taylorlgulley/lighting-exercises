@@ -8,3 +8,9 @@
 body {
     background-color: lightblue;
 }
+
+.figure-img {
+    max-height: 215px;
+    max-width: 325px;
+    object-fit: contain;
+}
