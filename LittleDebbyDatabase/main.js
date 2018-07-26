@@ -12,8 +12,7 @@ const makeObj = function (title, type, color, flavor, icing) {
 }
 
 const setInLocalStorage = function (key, object) {
-    const stringified = JSON.stringify(object);
-    localStorage.setItem(key, stringified);
+    localStorage.setItem(key, JSON.stringify(object));
 }
 
 const pushArray = function (array, item) {
